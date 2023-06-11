@@ -1,0 +1,7 @@
+---
+- name: install freenit ldap packages
+  with_items: "{{ freenit_ldap_packages }}"
+  pkgng:
+    name: "{{ item.name }}"
+  notify:
+    - restart freenit

@@ -1,0 +1,3 @@
+---
+freenit_ldap_packages:
+  - name: "{{ python_prefix}}-bonsai"
